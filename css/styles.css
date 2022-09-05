@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+
+.navbar {
+    --bs-navbar-color: black;
+    --bs-navbar-active-color: firebrick;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    --bs-nav-link-hover-color: firebrick;
+}
+
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(0, 128, 128, 0.477) !important;
+}
+
+main {
+    min-height: 80vh;
+}
+
+.footer {
+    font-size: x-large;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.main img:hover {
+    transform: scale(1.10) translate(10px, 10px);
+    /* transform: skew(15deg); */
+    transition: 0.3s ease-in-out;
+}
+
+/* INDEX */
+
+.banner {
+    width: 100%;
+}
+
+.index {
+    padding: 50px;
+    margin: 100px;
+    align-items: center;
+}
+
+.linkimage {
+    width: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* CONTACTO */
+
+.form {
+    font-size: x-large;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.from-control:focus {
+    border-color: teal;
+    border-top-color: teal;
+    border-right-color: teal;
+    border-bottom-color: teal;
+    border-left-color: teal;
+    box-shadow: teal;
+}
+
+.btn-primary {
+    --bs-btn-bg: teal;
+    --bs-btn-border-color: teal;
+    --bs-btn-hover-bg: brown;
+    --bs-btn-hover-border-color: brown;
+    --bs-btn-active-bg: brown;
+    --bs-btn-active-border-color: brown;
+    --bs-btn-disabled-bg: brown;
+    --bs-btn-disabled-border-color: brown;
+}
+
+.form-control:focus {
+    color: #292121;
+    background-color: #fff;
+    border-color: #fe8686;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: brown;
+    border-color: brown;
+}
+
+.form-check-input:focus {
+    border-color: #fe8686;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
+}
+
+/* GALERIA */
+
+h2 {
+    margin: 25px;
+    font-size: x-large;
+}
+
+.images {
+    flex: wrap;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.images img {
+    height: 250px;
+    margin: 20px;
+}
+
+/* INFO */
+
+.info {
+    margin: 25px;
+    font-size: x-large;
+    padding: 5px;
+}
+
+iframe {
+    margin: 25px;
+}
+
+/* SERVICIOS */
+
+.servicios {
+    font-size: x-large;
+    margin: 25px;
+    padding: 25px;
+}
+
+/* MEDIA QUERYS */
+
+@media (max-width: 1200px) {
+    .images {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+@media (max-width: 880px) {
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    iframe {
+        height: 300px;
+        width: 300px;
+    }
+}

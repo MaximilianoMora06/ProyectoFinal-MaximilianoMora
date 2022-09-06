@@ -21,6 +21,14 @@
     background-color: rgba(0, 128, 128, 0.477) !important;
 }
 
+.navbar-dropdown.navbar-fixed-top {
+    position: fixed;
+}
+
+.navbar-dropdown.bg-color.transparent {
+    background: none;
+}
+
 main {
     min-height: 80vh;
 }

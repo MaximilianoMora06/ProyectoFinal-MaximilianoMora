@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,13 +10,13 @@
 
 /* INICIO: ANIMACION-SUBRAYADO */
 
-.subrayado{
+.subrayado {
     display: inline-block;
     padding-bottom: 0.25rem;
     position: relative;
 }
 
-.subrayado::before{
+.subrayado::before {
     content: "";
     position: absolute;
     left: 0;
@@ -25,7 +27,7 @@
     transition: width 0.50s ease-out;
 }
 
-.subrayado:hover::before{
+.subrayado:hover::before {
     width: 100%;
     right: 0;
     left: auto;
@@ -33,6 +35,37 @@
 
 /* FIN: ANIMACION-SUBRAYADO*/
 
+// INICIO: ANIMACION-HAMBURGER
+
+/*
+.navbar-toogler{
+    
+    &::after{
+    transition: 0.4s;
+    }
+    &:hover::after{
+        transform: scale(1.3);
+        background-color: #d50000;
+    }
+    
+    :hover{
+        color: #fff;
+    }
+
+    &-icon::before{
+        z-index: 1;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    &-icon::after{
+        box-sizing: border-box;
+        z-index: 0;
+    }
+}
+*/
+
+// FIN: ANIMACION-HAMBUERGER
 body {
     background-color: #000;
 }
@@ -42,11 +75,11 @@ body {
     --bs-navbar-padding-x: 16px;
     --bs-navbar-padding-y: 32px;
 
-    img{
+    img {
         justify-content: end;
         margin: 8px;
         width: 80px;
-        border-radius: 32px;
+        border-radius: 50%;
     }
 }
 
@@ -55,9 +88,13 @@ body {
     --bs-nav-link-hover-color: #d50000;
 }
 
-// .navbar-dropdown.navbar-fixed-top {
-//     position: fixed;
-// }
+.navbar-toogler {
+    $navbar-dark-color: rgba(#d50000, .55);
+    $navbar-dark-hover-color: rgba(#d50000, .75);
+    $navbar-dark-active-color: #d50000;
+    $navbar-dark-disabled-color: rgba(#ff5131, .25);
+    $navbar-dark-toggler-border-color: rgba(#ff5131, .1);
+}
 
 .navbar-dropdown.bg-color.transparent {
     background: none;
@@ -199,9 +236,13 @@ main {
         height: 250px;
         margin: 20px;
     }
+
+    & #big-img {
+        width: 70%;
+    }
 }
 
-.galeria{
+.galeria {
     color: white;
     margin: 16px;
 }
@@ -237,17 +278,18 @@ iframe {
     }
 }
 
-@media (max-width: 991px){
-    #logo{
+@media (max-width: 991px) {
+    #logo {
         display: none;
     }
 }
 
 @media (max-width: 880px) {
 
-    .linkimage{
+    .linkimage {
         width: 100%;
     }
+
     .footer {
         flex-direction: row;
         flex-wrap: wrap;
@@ -264,9 +306,8 @@ iframe {
     }
 }
 
-@media (max-width:720px){
-    .index h1{
+@media (max-width:720px) {
+    .index h1 {
         font-size: 100%;
     }
 }
-

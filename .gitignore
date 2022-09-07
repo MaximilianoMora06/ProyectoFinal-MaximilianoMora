@@ -1,0 +1,3 @@
+node_modules/
+*.json
+# git rm -r --cached

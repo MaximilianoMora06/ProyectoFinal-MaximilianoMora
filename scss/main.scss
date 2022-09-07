@@ -17,7 +17,7 @@
 .subrayado::before{
     content: "";
     position: absolute;
-    left: 0;
+    right: 0;
     bottom: 0;
     width: 0;
     height: 2px;
@@ -27,8 +27,8 @@
 
 .subrayado:hover::before{
     width: 100%;
-    right: 0;
-    left: auto;
+    right: auto;
+    left: 0;
 }
 
 /* FIN: ANIMACION-SUBRAYADO*/

@@ -1,0 +1,36 @@
+/* CONTACTO */
+
+.form {
+    font-size: xx-large;
+    margin: 48px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 16px;
+
+    & .fontcolor {
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        color: white;
+    }
+
+    & label {
+        color: white;
+    }
+}
+
+.btn-primary {
+    --bs-btn-bg: #1b5e20;
+    --bs-btn-border-color: #1b5e20;
+    --bs-btn-hover-bg: #d50000;
+    --bs-btn-hover-border-color: #d50000;
+    --bs-btn-active-bg: #d50000;
+    --bs-btn-active-border-color: #d50000;
+    --bs-btn-disabled-bg: #d50000;
+    --bs-btn-disabled-border-color: #d50000;
+}
+

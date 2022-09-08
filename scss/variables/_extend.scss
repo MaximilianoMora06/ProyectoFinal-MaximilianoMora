@@ -1,0 +1,15 @@
+%center{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+@mixin main ($background) {
+    min-height: 80vh;
+    border-color: $colorVerdeOscuro;
+    border-width: 1px;
+    border-style: solid;
+    background-color: $background;
+    margin: 48px;
+    padding: 16px;
+}

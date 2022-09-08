@@ -1,0 +1,25 @@
+/* GALERIA */
+
+
+.images {
+    flex: wrap;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @extend %center;
+
+    & img {
+        height: 250px;
+        margin: 20px;
+    }
+
+    & #big-img {
+        width: 70%;
+    }
+}
+
+.galeria {
+    color: white;
+    margin: 48px;
+    padding: 16px;
+}

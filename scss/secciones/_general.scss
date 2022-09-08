@@ -1,0 +1,124 @@
+/* GENERAL */
+
+/* INICIO: ANIMACION-SUBRAYADO */
+
+.subrayado {
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    position: relative;
+}
+
+.subrayado::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #d50000;
+    transition: width 0.50s ease-out;
+}
+
+.subrayado:hover::before {
+    width: 100%;
+    right: 0;
+    left: auto;
+}
+
+/* FIN: ANIMACION-SUBRAYADO*/
+
+// INICIO: ANIMACION-HAMBURGER
+
+/*
+.navbar-toogler{
+    
+    &::after{
+    transition: 0.4s;
+    }
+    &:hover::after{
+        transform: scale(1.3);
+        background-color: #d50000;
+    }
+    
+    :hover{
+        color: #fff;
+    }
+
+    &-icon::before{
+        z-index: 1;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    &-icon::after{
+        box-sizing: border-box;
+        z-index: 0;
+    }
+}
+*/
+
+// FIN: ANIMACION-HAMBUERGER
+body {
+    background-color: $colorGrisOscuro;
+}
+
+.navbar {
+    --bs-navbar-active-color: #d50000;
+    --bs-navbar-padding-x: 16px;
+    --bs-navbar-padding-y: 32px;
+
+    img {
+        justify-content: end;
+        margin: 8px;
+        width: 80px;
+        border-radius: 50%;
+    }
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    --bs-nav-link-hover-color: #d50000;
+}
+
+.navbar-dropdown.bg-color.transparent {
+    background: none;
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    color: $colorVerdeClaro;
+
+    &:hover {
+        color: $colorVerdeClaro;
+    }
+}
+
+a.nav-link {
+    font-size: x-large;
+}
+
+main {
+    @include main (#2121211e)
+}
+
+.footer {
+    font-size: x-large;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorVerdeOscuro;
+
+    & img {
+        filter: invert(96%) sepia(0%) saturate(0%) hue-rotate(89deg) brightness(103%) contrast(103%);
+        height: 32px;
+        width: 32px;
+        margin: 16px;
+    }
+}
+
+.main img:hover {
+    transform: scale(1.10) translate(10px, 10px);
+    /* transform: skew(15deg); */
+    transition: 0.3s ease-in-out;
+}

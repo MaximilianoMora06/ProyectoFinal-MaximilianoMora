@@ -1,0 +1,41 @@
+/* MEDIA QUERYS */
+
+@media (max-width: 1200px) {
+    .images {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+@media (max-width: 991px) {
+    #logo {
+        display: none;
+    }
+}
+
+@media (max-width: 880px) {
+
+    .linkimage {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    iframe {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width:720px) {
+    .index h1 {
+        font-size: 100%;
+    }
+}

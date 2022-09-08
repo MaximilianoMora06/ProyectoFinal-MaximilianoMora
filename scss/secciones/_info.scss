@@ -1,0 +1,13 @@
+/* INFO */
+
+.info {
+    margin: 48px;
+    font-size: x-large;
+    padding: 16px;
+    color: white;
+    @extend %center;
+}
+
+iframe {
+    margin: 25px;
+}

@@ -1,5 +1,13 @@
 /* MEDIA QUERYS */
 
+@media (max-width: 1330px) {
+    .section-service {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 1200px) {
     .images {
         grid-template-columns: repeat(2, 2fr);
@@ -10,9 +18,14 @@
     #logo {
         display: none;
     }
+
+    .carta {
+        width: 400px;
+        height: 400px;
+    }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 881px) {
 
     .linkimage {
         width: 100%;
@@ -32,6 +45,8 @@
         height: 300px;
         width: 300px;
     }
+
+
 }
 
 @media (max-width:720px) {

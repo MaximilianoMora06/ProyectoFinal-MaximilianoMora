@@ -1,7 +1,7 @@
 /* CONTACTO */
 
 .form {
-    font-size: xx-large;
+    font-size: x-large;
     margin: 48px;
     display: flex;
     align-items: center;
@@ -20,7 +20,16 @@
 
     & label {
         color: white;
+        font-size: 24px;
     }
+}
+
+button{
+
+    width: 160px;
+    height: 56px;
+    display: flex;
+    @extend %center;
 }
 
 .btn-primary {
@@ -32,5 +41,13 @@
     --bs-btn-active-border-color: #d50000;
     --bs-btn-disabled-bg: #d50000;
     --bs-btn-disabled-border-color: #d50000;
+    --bs-btn-focus-box-shadow: 0 0 0 0;
+    
 }
 
+
+.form-control:focus {
+    border-color: $colorRojo;
+    box-shadow: 0 0 0 0.10rem $colorRojo;
+    outline: 0;
+}

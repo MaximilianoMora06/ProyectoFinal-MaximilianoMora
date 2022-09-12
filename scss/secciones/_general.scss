@@ -116,9 +116,3 @@ main {
         margin: 16px;
     }
 }
-
-.main img:hover {
-    transform: scale(1.10) translate(10px, 10px);
-    /* transform: skew(15deg); */
-    transition: 0.3s ease-in-out;
-}

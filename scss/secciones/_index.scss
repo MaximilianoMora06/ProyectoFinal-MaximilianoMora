@@ -1,24 +1,40 @@
 /* INDEX */
 
 .banner img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
 .index {
     padding: 50px;
     margin: 100px;
+    display: flex;
+    justify-items: center;
     align-items: center;
+    flex-direction: column;
 
     h1 {
         color: white;
     }
-}
 
-.linkimage {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
+    & .section-index {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        & a {
+            display: flex;
+            justify-content: center;
+        }
+
+        & .linkimage {
+            padding: 24px;
+            margin: 24px;
+            width: 50%;
+            @extend %animationImage;
+        }
+    }
+
+
+
 }

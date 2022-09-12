@@ -13,3 +13,8 @@
     margin: 48px;
     padding: 16px;
 }
+
+%animationImage:hover {
+    transform: scale(1.10) translate(10px, 10px);
+    transition: 0.3s ease-in-out;
+}

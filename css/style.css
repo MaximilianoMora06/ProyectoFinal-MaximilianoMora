@@ -5,10 +5,14 @@
   padding: 0;
   box-sizing: border-box; }
 
-.images, .info, .servicios {
+button, .images, .info {
   align-items: center;
   justify-content: center;
   justify-items: center; }
+
+.index .section-index .linkimage:hover, .images img:hover {
+  transform: scale(1.1) translate(10px, 10px);
+  transition: 0.3s ease-in-out; }
 
 /* GENERAL */
 /* INICIO: ANIMACION-SUBRAYADO */
@@ -111,33 +115,35 @@ main {
     width: 32px;
     margin: 16px; }
 
-.main img:hover {
-  transform: scale(1.1) translate(10px, 10px);
-  /* transform: skew(15deg); */
-  transition: 0.3s ease-in-out; }
-
 /* INDEX */
 .banner img {
-  max-width: 100%;
+  width: 100%;
   height: auto; }
 
 .index {
   padding: 50px;
   margin: 100px;
-  align-items: center; }
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column; }
   .index h1 {
     color: white; }
-
-.linkimage {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-items: center; }
+  .index .section-index {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .index .section-index a {
+      display: flex;
+      justify-content: center; }
+    .index .section-index .linkimage {
+      padding: 24px;
+      margin: 24px;
+      width: 50%; }
 
 /* CONTACTO */
 .form {
-  font-size: xx-large;
+  font-size: x-large;
   margin: 48px;
   display: flex;
   align-items: center;
@@ -152,7 +158,13 @@ main {
     flex-direction: column;
     color: white; }
   .form label {
-    color: white; }
+    color: white;
+    font-size: 24px; }
+
+button {
+  width: 160px;
+  height: 56px;
+  display: flex; }
 
 .btn-primary {
   --bs-btn-bg: #1b5e20;
@@ -162,7 +174,13 @@ main {
   --bs-btn-active-bg: #d50000;
   --bs-btn-active-border-color: #d50000;
   --bs-btn-disabled-bg: #d50000;
-  --bs-btn-disabled-border-color: #d50000; }
+  --bs-btn-disabled-border-color: #d50000;
+  --bs-btn-focus-box-shadow: 0 0 0 0; }
+
+.form-control:focus {
+  border-color: #d50000;
+  box-shadow: 0 0 0 0.1rem #d50000;
+  outline: 0; }
 
 /* GALERIA */
 .images {
@@ -183,31 +201,77 @@ main {
 
 /* INFO */
 .info {
-  margin: 48px;
+  margin: 32px;
   font-size: x-large;
-  padding: 16px;
+  padding: 8px;
   color: white; }
 
 iframe {
-  margin: 25px; }
+  margin: 32px; }
 
 /* SERVICIOS */
 .servicios {
   font-size: x-large;
-  margin: 48px;
-  padding: 16px;
-  color: white; }
+  color: white;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column; }
+  .servicios h1 {
+    margin: 24px; }
+  .servicios .section-service {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .servicios .section-service .carta {
+      border-radius: 16px;
+      width: 680px;
+      height: 560px;
+      margin: 24px;
+      display: grid;
+      grid-template-rows: minmax(100%, 1fr);
+      grid-template-areas: "stack";
+      overflow: hidden; }
+      .servicios .section-service .carta img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .servicios .section-service .carta img,
+      .servicios .section-service .carta figcaption {
+        grid-area: stack; }
+      .servicios .section-service .carta figcaption {
+        grid-area: stack;
+        background-color: #242424e0;
+        transform: translateY(calc(100% - 6rem));
+        transition: transform 600ms; }
+        .servicios .section-service .carta figcaption h3 {
+          height: 6rem; }
+        .servicios .section-service .carta figcaption h3,
+        .servicios .section-service .carta figcaption p {
+          padding: 24px;
+          color: #ffffff9d; }
+      .servicios .section-service .carta:hover figcaption {
+        transform: none; }
 
 /* MEDIA QUERYS */
+@media (max-width: 1330px) {
+  .section-service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; } }
+
 @media (max-width: 1200px) {
   .images {
     grid-template-columns: repeat(2, 2fr); } }
 
 @media (max-width: 991px) {
   #logo {
-    display: none; } }
+    display: none; }
+  .carta {
+    width: 400px;
+    height: 400px; } }
 
-@media (max-width: 880px) {
+@media (max-width: 881px) {
   .linkimage {
     width: 100%; }
   .footer {

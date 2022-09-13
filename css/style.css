@@ -264,10 +264,7 @@ iframe {
 
 @media (max-width: 991px) {
   #logo {
-    display: none; }
-  .carta {
-    width: 400px;
-    height: 400px; } }
+    display: none; } }
 
 @media (max-width: 881px) {
   .linkimage {

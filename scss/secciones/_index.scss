@@ -1,8 +1,8 @@
 /* INDEX */
 
 .banner img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    max-height: 70%;
 }
 
 .index {
@@ -12,6 +12,23 @@
     justify-items: center;
     align-items: center;
     flex-direction: column;
+
+    & .phrases {
+        background-color: $colorVerde;
+        padding: 24px;
+        margin: 160px;
+        width: 100%;
+        height: 8rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        & span {
+            color: #000;
+            font-size: x-large;
+        }
+    }
 
     h1 {
         color: white;
@@ -34,7 +51,4 @@
             @extend %animationImage;
         }
     }
-
-
-
 }

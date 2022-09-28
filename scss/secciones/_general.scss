@@ -27,39 +27,29 @@
 
 /* FIN: ANIMACION-SUBRAYADO*/
 
-// INICIO: ANIMACION-HAMBURGER
-
-/*
-.navbar-toogler{
-    
-    &::after{
-    transition: 0.4s;
-    }
-    &:hover::after{
-        transform: scale(1.3);
-        background-color: #d50000;
-    }
-    
-    :hover{
-        color: #fff;
-    }
-
-    &-icon::before{
-        z-index: 1;
-        position: absolute;
-        transform: translate(-50%, -50%);
-    }
-
-    &-icon::after{
-        box-sizing: border-box;
-        z-index: 0;
-    }
-}
-*/
-
-// FIN: ANIMACION-HAMBUERGER
 body {
     background-color: $colorGrisOscuro;
+
+    & h1 {
+        display: inline-block;
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    & h1::after {
+        content: "";
+        display: block;
+        margin: auto;
+        height: 2px;
+        width: 0px;
+        transition: all .8s;
+    }
+
+    & h1:hover::after {
+        width: 100%;
+        background: $colorRojo;
+    }
 }
 
 .navbar {
@@ -98,7 +88,16 @@ a.nav-link {
 }
 
 main {
-    @include main (#2121211e)
+    @include main (#2121211e);
+
+    & h1 {
+        font-style: inherit;
+    }
+}
+
+.text-focus-in {
+    -webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 .footer {
@@ -114,5 +113,34 @@ main {
         height: 32px;
         width: 32px;
         margin: 16px;
+    }
+}
+
+/* KEYFRAMES */
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
     }
 }

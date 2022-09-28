@@ -12,6 +12,17 @@
     .images {
         grid-template-columns: repeat(2, 2fr);
     }
+
+    .index{
+        margin: 48px;
+        padding: 16px;
+    }
+
+    .container {
+        grid-template-areas:
+            "TEXT"
+            "IFRAME";
+    }
 }
 
 @media (max-width: 991px) {
@@ -21,10 +32,6 @@
 }
 
 @media (max-width: 881px) {
-
-    .linkimage {
-        width: 100%;
-    }
 
     .footer {
         flex-direction: row;
@@ -41,11 +48,43 @@
         width: 300px;
     }
 
-
 }
 
 @media (max-width:720px) {
     .index h1 {
         font-size: 100%;
+    }
+
+    .form {
+        padding: 24px;
+        font-size: medium;
+
+        & label {
+            font-size: medium;
+        }
+    }
+
+    .info {
+        font-size: 16px;
+    }
+
+    .phrases span{
+        font-size: medium;
+    }
+}
+
+@media (max-width:550px) {
+    figcaption p {
+        font-size: 20px;
+    }
+
+    .container{
+        margin-right: 24px;
+    }
+}
+
+@media (max-width: 460px) {
+    figcaption p {
+        font-size: 16px;
     }
 }

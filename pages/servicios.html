@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- KEYWORDS -->
     <meta name="keywords" content="Servicios, trabajos, bombas, inyectoras, inyeccion">
     <!-- DESCRIPTION -->
@@ -49,39 +50,45 @@
 
     <!-- MAIN -->
     <main class="servicios main">
-        <section class="text-service">
+        <section class="text-service" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             <h1>Nuestros Servicios</h1>
         </section>
         <section class="section-service container-fluid">
-            <figure class="carta">
+            <figure class="carta" data-aos="fade-right">
                 <img src="../images/service-image1.jpeg" alt="service1">
                 <figcaption>
                     <h3>Bombas mecánicas</h3>
-                    <p>Desarmado, inspección de componentes, limpieza, reemplazo de piezas desgastadas, armado y calibración en equipo de prueba.</p>
+                    <p>Desarmado, inspección de componentes, limpieza, reemplazo de piezas desgastadas, armado y
+                        calibración en equipo de prueba.</p>
                 </figcaption>
             </figure>
 
-            <figure class="carta">
+            <figure class="carta" data-aos="fade-left">
                 <img src="../images/servicios.jpg" alt="service1">
                 <figcaption>
                     <h3>Periféricos de alta presión</h3>
-                    <p>En algunos casos solo se puede controlar el rendimiento, ya sea en el vehículo o en el banco de pruebas. Su reparación incluye desarme, cambio de juntas, componentes averiados, limpieza, armado, calibración y control en el banco de pruebas.</p>
+                    <p>En algunos casos solo se puede controlar el rendimiento, ya sea en el vehículo o en el banco de
+                        pruebas. Su reparación incluye desarme, cambio de juntas, componentes averiados, limpieza,
+                        armado, calibración y control en el banco de pruebas.</p>
                 </figcaption>
             </figure>
 
-            <figure class="carta">
+            <figure class="carta" data-aos="fade-right">
                 <img src="../images/service-image3.jpg" alt="service1">
                 <figcaption>
                     <h3>Inyectores electrónicos</h3>
-                    <p>Prueba manual para saber su estado, prueba eléctrica por estado de bobina, desarme, control en microscopio, cambio de componentes, armado, calibración y prueba en el banco de pruebas.</p>
+                    <p>Prueba manual para saber su estado, prueba eléctrica por estado de bobina, desarme, control en
+                        microscopio, cambio de componentes, armado, calibración y prueba en el banco de pruebas.</p>
                 </figcaption>
             </figure>
 
-            <figure class="carta">
+            <figure class="carta" data-aos="fade-left">
                 <img src="../images/service-image4.jpg" alt="service1">
                 <figcaption>
                     <h3>Diagnóstico del vehículo</h3>
-                    <p>Se diagnostica la falla del vehículo con equipos de diagnóstico profesionales, también se controlan los componentes involucrados en la inyección electrónica y su gestión como sensores, captores y actuadores, y la calidad del combustible.</p>
+                    <p>Se diagnostica la falla del vehículo con equipos de diagnóstico profesionales, también se
+                        controlan los componentes involucrados en la inyección electrónica y su gestión como sensores,
+                        captores y actuadores, y la calidad del combustible.</p>
                 </figcaption>
             </figure>
         </section>
@@ -97,6 +104,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

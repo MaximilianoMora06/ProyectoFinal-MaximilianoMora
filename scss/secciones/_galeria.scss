@@ -16,7 +16,11 @@
 }
 
 .galeria {
-    color: white;
     margin: 48px;
     padding: 16px;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
+

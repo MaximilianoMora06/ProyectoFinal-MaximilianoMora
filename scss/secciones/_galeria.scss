@@ -1,26 +1,26 @@
 /* GALERIA */
 
-
-.images {
-    flex: wrap;
-    padding: 15px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    @extend %center;
-
-    & img {
-        height: 250px;
-        margin: 20px;
-        @extend %animationImage;
-    }
-}
-
-.galeria {
-    margin: 48px;
-    padding: 16px;
-
+.galeria-h1{
     display: grid;
     justify-content: center;
     align-items: center;
 }
 
+.image-galeria{
+    width: 100%;
+}
+
+.row-galeria{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column-galeria{
+    flex: 25%;
+    padding: 5px;
+
+    & img{
+        padding-top: 5px;
+    }
+}

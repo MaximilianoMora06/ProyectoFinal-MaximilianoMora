@@ -57,6 +57,10 @@
         width: 300px;
     }
 
+    .column-galeria{
+        flex: 50%;
+    }
+
 }
 
 
@@ -94,6 +98,10 @@
 @media (max-width: 600px) {
     .main-card .cards .card {
         width: 100%;
+    }
+
+    .column-galeria{
+        flex: 100%;
     }
 }
 

@@ -23,10 +23,13 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        border-radius: 8px;
+        box-shadow: 8px 8px $colorVerdeOscuro;
 
         & span {
             color: #000;
-            font-size: x-large;
+            font-size: xx-large;
+            
         }
     }
 
@@ -52,6 +55,9 @@
         }
     }
 }
+
+
+// COMENTARIOS
 
 .container {
     max-width: 950px;

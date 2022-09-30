@@ -13,12 +13,21 @@
         grid-template-columns: repeat(2, 2fr);
     }
 
-    .index{
+    .index {
         margin: 48px;
         padding: 16px;
     }
 
-    .container {
+    .info {
+        padding-right: 32px;
+    }
+
+    iframe {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contenedor2 {
         grid-template-areas:
             "TEXT"
             "IFRAME";
@@ -50,6 +59,15 @@
 
 }
 
+
+@media (max-width: 768px) {
+    .main-card .cards .card {
+        margin: 20px 0 10px 0;
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+
 @media (max-width:720px) {
     .index h1 {
         font-size: 100%;
@@ -68,18 +86,20 @@
         font-size: 16px;
     }
 
-    .phrases span{
+    .phrases span {
         font-size: medium;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-card .cards .card {
+        width: 100%;
     }
 }
 
 @media (max-width:550px) {
     figcaption p {
         font-size: 20px;
-    }
-
-    .container{
-        margin-right: 24px;
     }
 }
 

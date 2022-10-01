@@ -1,5 +1,11 @@
 /* MEDIA QUERYS */
 
+@media (max-width: 1400px) {
+    .banner img {
+        height: 600px;
+    }
+}
+
 @media (max-width: 1330px) {
     .section-service {
         display: flex;
@@ -38,6 +44,10 @@
     #logo {
         display: none;
     }
+
+    .banner img {
+        height: 500px;
+    }
 }
 
 @media (max-width: 881px) {
@@ -57,8 +67,12 @@
         width: 300px;
     }
 
-    .column-galeria{
+    .column-galeria {
         flex: 50%;
+    }
+
+    .banner img {
+        height: 400px;
     }
 
 }
@@ -93,6 +107,10 @@
     .phrases span {
         font-size: medium;
     }
+
+    .banner img {
+        height: 300px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -100,7 +118,7 @@
         width: 100%;
     }
 
-    .column-galeria{
+    .column-galeria {
         flex: 100%;
     }
 }
@@ -114,5 +132,9 @@
 @media (max-width: 460px) {
     figcaption p {
         font-size: 16px;
+    }
+
+    .banner img{
+        height: 280px;
     }
 }

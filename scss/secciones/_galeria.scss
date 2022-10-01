@@ -1,26 +1,31 @@
 /* GALERIA */
 
-.galeria-h1{
+.galeria-h1 {
     display: grid;
     justify-content: center;
     align-items: center;
 }
 
-.image-galeria{
+.image-galeria {
     width: 100%;
 }
 
-.row-galeria{
+.row-galeria {
     display: flex;
     padding: 5px;
     flex-wrap: wrap;
 }
 
-.column-galeria{
+.column-galeria {
     flex: 25%;
     padding: 5px;
 
-    & img{
+    & img {
         padding-top: 5px;
+
+        &:hover {
+            box-shadow: 0px 0px 1px 1px $colorRojo;
+            -webkit-box-shadow: 0px 0px 1px 1px $colorRojo;
+        }
     }
 }

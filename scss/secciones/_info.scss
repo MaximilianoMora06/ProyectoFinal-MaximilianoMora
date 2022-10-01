@@ -71,7 +71,7 @@ h2 {
 
 .accordion-link {
     font-size: 1.6rem;
-    color: $colorRojo;
+    color: #fff;
     text-decoration: none;
     background-color: $colorGris;
     width: 100%;
@@ -81,7 +81,7 @@ h2 {
     padding: 1rem 0;
 
     &:hover {
-        color: $colorRojoOscuro;
+        color: $colorVerdeClaro;
     }
 
     & span {
@@ -106,7 +106,7 @@ h2 {
         position: absolute;
         width: .6rem;
         height: 90%;
-        background-color: $colorVerde;
+        background-color: $colorRojoClaro;
         top: 50%;
         left: 0;
         transform: translateY(-50%);

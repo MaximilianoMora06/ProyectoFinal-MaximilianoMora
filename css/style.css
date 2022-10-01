@@ -374,7 +374,7 @@ h2 {
 
 .accordion-link {
   font-size: 1.6rem;
-  color: #d50000;
+  color: #fff;
   text-decoration: none;
   background-color: #212121;
   width: 100%;
@@ -383,7 +383,7 @@ h2 {
   justify-content: space-between;
   padding: 1rem 0; }
   .accordion-link:hover {
-    color: #9b0000; }
+    color: #4c8c4a; }
   .accordion-link span {
     color: #d50000;
     padding: .5rem; }
@@ -401,7 +401,7 @@ h2 {
     position: absolute;
     width: .6rem;
     height: 90%;
-    background-color: #1b5e20;
+    background-color: #ff5131;
     top: 50%;
     left: 0;
     transform: translateY(-50%); }

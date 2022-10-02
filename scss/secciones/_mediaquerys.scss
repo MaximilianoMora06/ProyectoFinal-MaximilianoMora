@@ -132,6 +132,11 @@
     .index img {
         width: 100%;
     }
+
+    iframe {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media (max-width:550px) {

@@ -1,5 +1,24 @@
 /* GENERAL */
 
+// SCROLL-BAR 
+body::-webkit-scrollbar {
+    width: 8px;
+
+    &-thumb {
+        background: $colorRojoOscuro;
+        border-radius: 8px;
+    }
+
+    &:horizontal {
+        width: 8px;
+    }
+}
+
+body::-webkit-scrollbar-corner {
+    width: 8px;
+    color: $colorRojoOscuro;
+}
+
 /* INICIO: ANIMACION-SUBRAYADO */
 
 .subrayado {
@@ -111,7 +130,7 @@ main {
     flex: row;
     justify-content: center;
     align-items: center;
-    background-color: $colorVerdeOscuro;
+    background-color: #165700;
 
     & img {
         filter: invert(96%) sepia(0%) saturate(0%) hue-rotate(89deg) brightness(103%) contrast(103%);

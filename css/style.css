@@ -16,6 +16,18 @@ button {
   transition: 0.3s ease-in-out; }
 
 /* GENERAL */
+body::-webkit-scrollbar {
+  width: 8px; }
+  body::-webkit-scrollbar-thumb {
+    background: #9b0000;
+    border-radius: 8px; }
+  body::-webkit-scrollbar:horizontal {
+    width: 8px; }
+
+body::-webkit-scrollbar-corner {
+  width: 8px;
+  color: #9b0000; }
+
 /* INICIO: ANIMACION-SUBRAYADO */
 .subrayado {
   display: inline-block;
@@ -75,9 +87,9 @@ body {
 
 .navbar-brand {
   font-size: xx-large;
-  color: #4c8c4a; }
+  color: #42af1d; }
   .navbar-brand:hover {
-    color: #4c8c4a; }
+    color: #42af1d; }
 
 a.nav-link {
   font-size: x-large; }
@@ -103,7 +115,7 @@ main {
   flex: row;
   justify-content: center;
   align-items: center;
-  background-color: #003300; }
+  background-color: #165700; }
   .footer img {
     filter: invert(96%) sepia(0%) saturate(0%) hue-rotate(89deg) brightness(103%) contrast(103%);
     height: 32px;
@@ -245,7 +257,7 @@ main {
   padding-bottom: 16px; }
 
 .card .content a {
-  color: #4c8c4a; }
+  color: #42af1d; }
 
 .cuenta {
   color: #b6b6b6; }
@@ -448,7 +460,7 @@ h2 {
   justify-content: space-between;
   padding: 1rem 0; }
   .accordion-link:hover {
-    color: #4c8c4a; }
+    color: #42af1d; }
   .accordion-link span {
     color: #d50000;
     padding: .5rem; }

@@ -281,6 +281,8 @@ input[type="radio"] {
     flex-wrap: wrap;
     flex-direction: column;
     color: white; }
+    .form .fontcolor h1 {
+      padding-bottom: 20px; }
   .form label {
     color: white;
     font-size: 24px; }
@@ -554,7 +556,9 @@ h2 {
     width: 100%; }
   iframe {
     width: 200px;
-    height: 200px; } }
+    height: 200px; }
+  main {
+    margin: 16px; } }
 
 @media (max-width: 550px) {
   figcaption p {

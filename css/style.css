@@ -146,34 +146,40 @@ main {
   justify-items: center;
   align-items: center;
   flex-direction: column; }
-  .index .phrases {
-    background-color: #1b5e20;
-    padding: 24px;
-    margin: 160px;
-    width: 100%;
-    height: 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 8px;
-    box-shadow: 8px 8px #003300; }
-    .index .phrases span {
-      color: #000;
-      font-size: xx-large; }
   .index h1 {
     color: white; }
   .index section {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding-top: 24px;
+    padding-bottom: 24px; }
     .index section a {
       display: flex;
-      justify-content: center;
-      padding-top: 24px;
-      padding-bottom: 24px; }
+      justify-content: center; }
       .index section a img {
         border-radius: 16px;
         width: 75%; }
+
+.contenedor-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "INFO SERVICE" "GALERIA CONTACTO"; }
+
+.INFO {
+  grid-area: INFO; }
+
+.SERVICE {
+  grid-area: SERVICE; }
+
+.GALERIA {
+  grid-area: GALERIA; }
+
+.CONTACTO {
+  grid-area: CONTACTO; }
 
 .container {
   max-width: 950px;
@@ -479,7 +485,13 @@ h2 {
   .section-service {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; } }
+    justify-content: center; }
+  .contenedor-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "INFO" "SERVICE" "GALERIA" "CONTACTO"; } }
 
 @media (max-width: 1200px) {
   .images {

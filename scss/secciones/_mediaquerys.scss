@@ -12,6 +12,18 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .contenedor-index {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "INFO"
+            "SERVICE"
+            "GALERIA"
+            "CONTACTO";
+    }
 }
 
 @media (max-width: 1200px) {
@@ -122,7 +134,7 @@
         flex: 100%;
     }
 
-    .index img{
+    .index img {
         width: 100%;
     }
 }
@@ -138,7 +150,7 @@
         font-size: 16px;
     }
 
-    .banner img{
+    .banner img {
         height: 280px;
     }
 }

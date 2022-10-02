@@ -1,5 +1,6 @@
 /* INDEX */
 
+// BANNER
 .banner img {
     width: 100%;
     height: 880px;
@@ -9,6 +10,7 @@
     padding-top: 25%;
 }
 
+// MAIN
 .index {
     padding: 50px;
     margin: 100px;
@@ -43,6 +45,7 @@
     }
 }
 
+// CONTENEDOR
 .contenedor-index {
     display: grid;
     grid-template-columns: 1fr 1fr;

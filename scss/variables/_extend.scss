@@ -1,9 +1,11 @@
-%center{
+// CENTRADO
+%center {
     align-items: center;
     justify-content: center;
     justify-items: center;
 }
 
+// BACKGROUND MAIN
 @mixin main ($background) {
     min-height: 80vh;
     border-color: $colorVerdeOscuro;
@@ -14,8 +16,8 @@
     padding: 16px;
 }
 
+// ANIMACION HOVER PARA IMG
 %animationImage:hover {
     transform: scale(1.10) translate(10px, 10px);
     transition: 0.3s ease-in-out;
 }
-

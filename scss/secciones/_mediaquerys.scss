@@ -1,11 +1,13 @@
 /* MEDIA QUERYS */
 
+// 1400PX
 @media (max-width: 1400px) {
     .banner img {
         height: 600px;
     }
 }
 
+// 1330 PX
 @media (max-width: 1330px) {
     .section-service {
         display: flex;
@@ -26,6 +28,7 @@
     }
 }
 
+// 1200PX
 @media (max-width: 1200px) {
     .images {
         grid-template-columns: repeat(2, 2fr);
@@ -47,6 +50,7 @@
     }
 }
 
+// 991PX
 @media (max-width: 991px) {
     #logo {
         display: none;
@@ -57,6 +61,7 @@
     }
 }
 
+// 881PX
 @media (max-width: 881px) {
 
     .footer {
@@ -84,7 +89,7 @@
 
 }
 
-
+// 768PX
 @media (max-width: 768px) {
     .main-card .cards .card {
         margin: 20px 0 10px 0;
@@ -92,7 +97,7 @@
     }
 }
 
-
+// 720PX
 @media (max-width:720px) {
     .index h1 {
         font-size: 100%;
@@ -120,6 +125,7 @@
     }
 }
 
+// 600PX
 @media (max-width: 600px) {
     .main-card .cards .card {
         width: 100%;
@@ -139,12 +145,14 @@
     }
 }
 
+// 550PX
 @media (max-width:550px) {
     figcaption p {
         font-size: 20px;
     }
 }
 
+// 460PX
 @media (max-width: 460px) {
     figcaption p {
         font-size: 16px;

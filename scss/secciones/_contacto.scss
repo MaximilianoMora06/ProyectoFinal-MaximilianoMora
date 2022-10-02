@@ -1,5 +1,7 @@
 /* CONTACTO */
 
+
+
 .form {
     font-size: x-large;
     margin: 48px;
@@ -16,6 +18,10 @@
         flex-wrap: wrap;
         flex-direction: column;
         color: white;
+
+        & h1{
+            padding-bottom: 16px;
+        }
     }
 
     & label {
